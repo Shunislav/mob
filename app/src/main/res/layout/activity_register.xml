@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "#FEDCE0"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/textViewLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="296dp"
+        android:text="TypeLoginHere"
+        android:textColor="#3D0007"
+        android:textSize="24dp"
+        app:drawableTint="#352E2E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="55dp"
+        android:text=""
+        android:textColor="#3F0108"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:paddingLeft="55dp"
+
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#3F0108"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/textViewLog4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="192dp"
+        android:text="Your Password"
+        android:textColor="#3D0007"
+        android:textSize="14dp"
+        app:drawableTint="#352E2E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLog"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/bg_sing"
+        android:drawableRight="@drawable/right"
+        android:paddingRight="24dp"
+        android:text="Login"
+        android:gravity="left|center"
+        android:paddingLeft="34dp"
+        app:barrierAllowsGoneWidgets="false"
+        app:chainUseRtl="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
